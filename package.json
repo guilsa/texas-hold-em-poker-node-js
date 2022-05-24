@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha"
   },
   "repository": {
     "type": "git",
@@ -20,5 +20,8 @@
   "bugs": {
     "url": "https://github.com/guilsa/texas-hold-em-poker-node-js/issues"
   },
-  "homepage": "https://github.com/guilsa/texas-hold-em-poker-node-js#readme"
+  "homepage": "https://github.com/guilsa/texas-hold-em-poker-node-js#readme",
+  "devDependencies": {
+    "mocha": "^10.0.0"
+  }
 }
