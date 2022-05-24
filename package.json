@@ -1,0 +1,24 @@
+{
+  "name": "texas-hold-em-poker-node",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/guilsa/texas-hold-em-poker-node-js.git"
+  },
+  "keywords": [
+    "poker",
+    "nodejs",
+    "texas-hold-em"
+  ],
+  "author": "Guilherme Sa",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/guilsa/texas-hold-em-poker-node-js/issues"
+  },
+  "homepage": "https://github.com/guilsa/texas-hold-em-poker-node-js#readme"
+}
