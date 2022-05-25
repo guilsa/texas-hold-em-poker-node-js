@@ -23,7 +23,7 @@ it('card has four possible suit options', () => {
 
 it('card has thirteen possible rank options', () => {
   const card = new Card('5', 'Diamonds')
-  assert.deepEqual(card.RANKS, ['2', '4', '5', '6', '7', '8', '9', '10', 'Jack', 'Queen', 'King', 'Ace'])
+  assert.deepEqual(card.RANKS, ['2', '3', '4', '5', '6', '7', '8', '9', '10', 'Jack', 'Queen', 'King', 'Ace'])
 })
 
 it('card only allows for valid rank', () => {
@@ -32,4 +32,12 @@ it('card only allows for valid rank', () => {
 
 it('card only allows for valid suit', () => {
   assert.throws(() => new Card('2', 'Ducks'), Error)
+})
+
+it('can create standard 52 cards', () => {
+  const cards = Card.createStandard52Cards()
+  assert.equal(cards.length, 52)
+
+  assert.deepEqual(cards[0], new Card('2', 'Hearts'))
+  assert.deepEqual(cards.at(-1), new Card('Ace', 'Diamonds'))
 })
