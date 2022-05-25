@@ -1,4 +1,7 @@
 const Card = require('./card')
+const Deck = require('./deck')
 
-const card1 = new Card('2', 'Spades')
-const card2 = new Card('Ace', 'Hearts')
+const deck = new Deck()
+const cards = Card.createStandard52Cards()
+deck.addCards(cards)
+
